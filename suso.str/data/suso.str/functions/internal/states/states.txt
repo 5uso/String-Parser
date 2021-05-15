@@ -1,0 +1,14 @@
+0: Gets tag list start
+1: Flattens input string
+2: Comparison - Flattens cmp string
+3: Comparison - Checks if strings are equal. If they are, returns 0
+    3-1: They are not, continue comparing. Gets real tag list
+4: Comparison - Creates fake tag list. Flattens real tag list
+5: Comparison - Flattens fake tag list
+6: Comparison - Final check.
+    6-1: Input is bigger
+    6-2: Input is smaller
+7: Comparison - Equal to 2, but from generic state
+
+
+Context 0: 0-9,
