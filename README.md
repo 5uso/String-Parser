@@ -3,7 +3,7 @@ A Minecraft datapack that allows to parse strings into character arrays. `"hi"` 
 
 Can parse player names, command outputs, skull data, book contents...
 
-Handles most common characters except for `"`, `!` and ` ` (spaces).
+Handles any unicode character.
 
 Requires commandblocks to be enabled.
 
