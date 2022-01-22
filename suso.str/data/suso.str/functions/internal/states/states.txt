@@ -8,7 +8,7 @@
 6: Comparison - Final check.
     6-1: Input is bigger
     6-2: Input is smaller
-7: Comparison - Equal to 2, but from generic state
+7: Comparison - Similar to 2, but from generic state, also does 3 kinda
 
 
 Context 0: 0-9,

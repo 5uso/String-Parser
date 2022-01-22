@@ -13,5 +13,4 @@ execute if score $state suso.str matches 1 run function suso.str:internal/states
 execute if score $state suso.str matches 0 run function suso.str:internal/states/0
 
 execute if score $state suso.str matches -1 run data modify block ~ ~ ~ UpdateLastExecution set value 1b
-scoreboard players add $counter suso.str 1
-execute if score $counter suso.str matches 5000.. run data modify block ~ ~ ~ UpdateLastExecution set value 1b
+#scoreboard players add $counter suso.str 1

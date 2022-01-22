@@ -29,6 +29,13 @@ execute unless data storage suso.str:io in.possible_chars[] run data modify stor
 data modify storage suso.str:internal possible_chars set from storage suso.str:internal possible_chars_set
 data modify storage suso.str:internal prep set from storage suso.str:io in.prep
 execute unless data storage suso.str:io in.prep run data modify storage suso.str:internal prep set value ""
-execute store result score $max_chars suso.str run data get storage suso.str:io in.max_chars
+
+execute unless data storage suso.str:internal prep[] run function suso.str:internal/prep/str
+execute if data storage suso.str:internal prep[] run function suso.str:internal/prep/arr
+execute store result score $max_chars suso.str run data get storage suso.str:io in.string
+scoreboard players operation $max_chars suso.str -= $prep_chars suso.str
+
+execute store result score $user_max_chars suso.str run data get storage suso.str:io in.max_chars
+execute if score $user_max_chars suso.str matches 1.. if score $user_max_chars suso.str < $max_chars suso.str run scoreboard players operation $max_chars suso.str = $user_max_chars suso.str
 
 #time 2, id 3, name 5, signaturereq 7, skin 11, model 13, cape 17
