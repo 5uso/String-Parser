@@ -1,0 +1,4 @@
+#execute if data storage suso.str:internal {last_char:"L"} run data modify storage suso.str:internal possible_chars set value ["C","D"] Comma
+execute if data storage suso.str:internal {last_char:"M"} run data modify storage suso.str:internal possible_chars set value ["C","D","S","T","i","j","y","z"]
+execute if data storage suso.str:internal {last_char:"N"} run data modify storage suso.str:internal possible_chars set value ["C","D","S","T","i","j","y","z"]
+execute if data storage suso.str:internal {last_char:"O"} run data modify storage suso.str:internal possible_chars set value ["C","D","S","T"]

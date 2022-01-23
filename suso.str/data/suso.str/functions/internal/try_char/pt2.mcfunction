@@ -1,4 +1,4 @@
-scoreboard players operation $half suso.str /= $2 suso.str
+scoreboard players operation $half suso.str /= #2 suso.str
 
 function suso.str:internal/try_char/move_half
 

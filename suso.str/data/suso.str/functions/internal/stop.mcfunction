@@ -1,4 +1,4 @@
-data modify storage suso.str:io out set from storage suso.str:internal result
+execute unless score $get suso.str matches 1.. run data modify storage suso.str:io out set from storage suso.str:internal result
 
 execute if score $cmdfeed suso.str matches 0 run gamerule sendCommandFeedback false
 scoreboard players set $state suso.str -1
