@@ -22,5 +22,6 @@ setblock 29999986 0 43376 minecraft:chain_command_block[conditional=false,facing
 setblock 29999986 0 43377 minecraft:chain_command_block[conditional=false,facing=west]{auto:1b,UpdateLastExecution:0b,TrackOutput:0b}
 setblock 29999985 0 43377 minecraft:chain_command_block[conditional=false,facing=north]{auto:1b,UpdateLastExecution:0b,Command:"help me",TrackOutput:1b}
 setblock 29999984 0 43377 minecraft:command_block[conditional=false,facing=up]{auto:0b,UpdateLastExecution:1b,TrackOutput:1b} destroy
+setblock 29999984 1 43376 minecraft:dropper[facing=up]{Items:[{Count:1b,Slot:0b,id:"minecraft:player_head"}]}
 
 #tellraw @a "Reloaded!"
