@@ -22,6 +22,10 @@ setblock 29999986 0 43376 minecraft:chain_command_block[conditional=false,facing
 setblock 29999986 0 43377 minecraft:chain_command_block[conditional=false,facing=west]{auto:1b,UpdateLastExecution:0b,TrackOutput:0b}
 setblock 29999985 0 43377 minecraft:chain_command_block[conditional=false,facing=north]{auto:1b,UpdateLastExecution:0b,Command:"help me",TrackOutput:1b}
 setblock 29999984 0 43377 minecraft:command_block[conditional=false,facing=up]{auto:0b,UpdateLastExecution:1b,TrackOutput:1b} destroy
-setblock 29999984 1 43376 minecraft:dropper[facing=up]{Items:[{Count:1b,Slot:0b,id:"minecraft:player_head"}]}
+setblock 29999984 1 43376 minecraft:dropper[facing=up]
+
+#Get newline char into storage
+loot replace block 29999984 1 43376 container.0 loot suso.str:newline
+data modify storage suso.str:internal newline set from block 29999984 1 43376 Items[0].tag.pages[0]
 
 #tellraw @a "Reloaded!"
