@@ -72,3 +72,9 @@ function suso.str:call_head
 
 ## Parsing newlines
 Bare newline characters can appear in writable (unsigned) books. In order to parse the newline character, you'll first need to get it into your search array. Doing so is not as straightforward as any other character, since minecraft will not allow you to type it into most commands, even when escaped. If you need a newline character, you can find a string containing a single one at `storage suso.str:internal newline`. Copy it from there using `data modify` into your search array.
+
+## Crediting
+This library is licensed under the [Apache License 2.0](https://github.com/5uso/String-Parser/blob/main/LICENSE). When using it as part of  your own projects, you must:
+
+- Include [crediting for the library](https://github.com/5uso/String-Parser/blob/main/NOTICE) in a way visible to players. This probably fits best into the credits section of your map/datapack in-game, but in case that's impossible it may be done within a text file or documentation distributed with the project.
+- Include a copy of the [license](https://github.com/5uso/String-Parser/blob/main/LICENSE).
